@@ -1,76 +1,54 @@
-# 📊 Amazon Sales Analysis
+# 📊 Amazon Sales Data Analysis Dashboard
 
 ## 📝 Project Overview
-This project analyzes **Amazon sales performance** using **Power BI and Python**.  
-The dataset has been cleaned, processed, and enhanced with additional calculated columns to uncover insights related to **profitability**, **shipping performance**, and **sales trends**.
+This project analyzes Amazon sales performance using **Power BI**.  
+The dashboard focuses on revenue, profit, profit margin, units sold, shipping duration, product categories, order priority, and sales forecasting.
 
-### Key Calculations
-- **Profit** — calculated for each transaction (`Sales - Cost`)  
-- **Profit Margin** — `(Profit ÷ Sales) × 100`  
-- **Days Took To Ship** — difference between **Ship Date** and **Order Date**
+## 📁 Files Included
+- `Amazon_Sales_Rawdata.csv` – Original dataset
+- `Amazon_final_data.csv` – Cleaned dataset
+- `AmazonSalesData.pbix` – Power BI dashboard file
+- Dashboard screenshots
 
----
+## 📊 Dashboard Highlights
+- Total Revenue: **4870**
+- Total Profit: **797M**
+- Average Profit Margin: **37%**
+- Units Sold: **99**
+- Average Days to Ship: **71.47**
 
-## 📘 Dataset Details
+## 🔍 Key Insights
+- **Cosmetics** generated the highest profit among item categories.
+- **Household, Office Supplies, Clothes, and Baby Food** also contributed strong profits.
+- Revenue trend shows the highest yearly revenue around **2012**.
+- Sales performance varies by country, shown through the map visualization.
+- **High order priority** produced the highest profit compared to other priority levels.
+- Top-selling item categories include **Cosmetics, Clothes, Beverages, Office Supplies, and Personal Care**.
+- Forecast visuals show expected sales trends from **2010 to 2025**.
 
-| Dataset | Description |
-|----------|--------------|
-| `Amazon_Sales_Rawdata.csv` | Original uncleaned data collected from Amazon sales |
-| `Amazon_final_data.csv` | Cleaned and processed data used for visualization |
-| `AmazonSalesData.pbix` | Power BI dashboard file (visualization) |
+## 📌 Dashboard Pages
+### Page 1: Sales Overview
+- Revenue, Profit, Profit Margin, Units Sold
+- Category-wise profit analysis
+- Country-wise revenue map
+- Yearly and monthly revenue trends
 
-### 📏 Dataset Size
-- **Rows:** ~1,000 (approx.)  
-- **Columns:** 18 (after adding new calculated columns)
-
-### 📋 Columns Overview
-
-| Column Name | Description |
-|--------------|-------------|
-| `Order ID` | Unique ID for each order |
-| `Order Date` | Date when the order was placed |
-| `Ship Date` | Date when the order was shipped |
-| `Ship Mode` | Type of shipping used (e.g., Standard, Express) |
-| `Customer Name` | Name of the customer |
-| `Segment` | Customer segment (Consumer, Corporate, Home Office) |
-| `Country` | Country where the product was sold |
-| `City` | City of the customer |
-| `State` | State of the customer |
-| `Postal Code` | Postal/ZIP code |
-| `Region` | Sales region (e.g., East, West, Central) |
-| `Category` | Product category (e.g., Furniture, Technology, Office Supplies) |
-| `Sub-Category` | More specific product category |
-| `Product Name` | Name of the product sold |
-| `Sales` | Total sales amount |
-| `Quantity` | Number of units sold |
-| `Discount` | Discount applied on the product |
-| `Profit` | Net profit earned from each sale |
-| `Profit Margin` | Profitability percentage per order |
-| `Days Took To Ship` | Time (in days) taken to ship an order |
-
----
-
-## 📊 Key Insights
-- Highest sales come from the **Technology** category with the best profit margins.  
-- **Standard shipping** is most used but also has **longer delivery times**.  
-- Certain regions show **low profit margins** due to higher discounts.  
-- Profit and margin trends highlight **seasonal peaks** in sales performance.  
-
----
+### Page 2: Product & Forecast Analysis
+- Profit based on order priority
+- Top-selling product categories by month
+- Top 5 items sold
+- Sales forecast from 2010 to 2025
 
 ## 🧠 Tools Used
-- **Microsoft Power BI** — visualization,modeling,
-- **Python (Pandas, Matplotlib)** — Data cleaning,Data preprocessing.
----
+- **Microsoft Power BI** – Dashboard creation and visualization
+- **Python / Pandas** – Data cleaning and preprocessing
 
 ## 🚀 Future Enhancements
-- Added **forecast visuals** for yearly trends.  
-- Create **interactive filters** by region and product category.  
----
+- Add slicers for country, item type, and order priority
+- Improve forecast accuracy with more historical data
+- Add KPIs for shipping performance and regional growth
 
 ## 👩‍💻 Author
 **Shobana M**  
-📧 Email: shobanamurugesan75@gmail.com
-🔗 [LinkedIn](https://www.linkedin.com/in/shobana-m-3542a933a)
-
-
+📧 Email: shobanam135@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/shobana-m-3542a933a
